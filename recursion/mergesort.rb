@@ -12,6 +12,7 @@ def mergesort(arr)
   merge(arr_left, arr_right)
 end
 
+
 def merge(left, right)
   p "l: #{left.size}, r: #{right.size}"
   sorted = []
@@ -22,6 +23,7 @@ def merge(left, right)
   end
   sorted + left + right
 end
+
 
 p mergesort [4, 3, 2, 10]
 #p mergesort [4, 3, 2, 10, 1]

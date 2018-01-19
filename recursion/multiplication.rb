@@ -8,6 +8,7 @@
 # multiplication is repeated addition
 def multiply(x, y)
   return y if x == 1
+
   y + multiply(x - 1, y)
 end
 
