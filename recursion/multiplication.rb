@@ -7,9 +7,11 @@
 
 # multiplication is repeated addition
 def multiply(x, y)
-  (x == 1) ? y : multiply(x - 1, y) + y
+  return y if x == 1
+  y + multiply(x - 1, y)
 end
 
 p multiply(3, 5)
 p multiply(7, 6)
 p multiply(15, 15)
+p multiply(19, 18)
